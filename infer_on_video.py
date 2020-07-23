@@ -60,6 +60,8 @@ if __name__ == '__main__':
             image = Image.fromarray(frame)
             try:
                 bboxes, faces = mtcnn.align_multi(image, conf.face_limit, 16)
+                print(bboxes)
+                print(faces)
             except:
                 bboxes = []
                 faces = []
